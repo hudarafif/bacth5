@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container {
+          display: flex;
+          flex-wrap: wrap;
+          border: solid 1px black;
+          align-items: center;
+          padding: 20px;
+          width: 400px;
+          /* height: 900px; */
+          gap: 20px;
+          justify-content: center;
+          margin-left: 40%;
+          margin-top: 20%;
+        }
+    
+        .flex-container .box {
+            width: 150px;
+            margin: 50px;
+            text-align: center;
+            line-height: 100px;
+            font-size: 30px;
+            padding-top: 10px;
+            border: solid 1px black;
+        }
+        .judul {
+            justify-content: center;
+        }
+
+        /* .parent .result .box{
+            display: flex;
+            flex-direction: column;
+        } */
+      
+      </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div id="judul" class="judul">COVID-19 TRACKER</div>
+        <div>
+            <input type="text" class="form-control input-keyword"> 
+            <button id="button" class="btn" type="button">search</button>
+        </div>
+        <div class="result">
+            <div id="box-1" class="box">Active Cases</div>
+            <div id="box-2" class="box">New Cases</div>
+            <div id="box-3" class="box">Recovered Cases</div>
+            <div id="box-4" class="box">Total Cases</div>
+            <div id="box-5" class="box">Total Deaths</div>
+            <div id="box-6" class="box">Total Test</div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
