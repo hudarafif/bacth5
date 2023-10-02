@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas-2</title>
+  <!-- Compiled and minified CSS -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+</head>
+<body>
+  
+  <div class="konten">
+    <div class="p-2 col-2"><img id="imageTarget" src="./default.jpg" class="image-size">
+    </div>
+    <div class="p-5 col-2 ">
+      <h1> <span id="nameTarget">Nama Anda</span></h1>
+      <h4><span id="RoleTarget"></span></h4>
+      <button id="editButton" type="button" class="btn btn-primary btn-lg mt-3">Edit</button>
+      <button  type="button" class="btn btn-outline-success btn-lg mt-3">Resume</button>
+    </div>
+      
+    <div class="col-1 p-5">
+      <div class="value">
+        <h3>Availability </h3>
+        <h3>Age </h3>
+        <h3>Location</h3>
+        <h3>Years </h3>
+        <h3>Email </h3>
+      </div>
+    </div>
+    <div class="col-2 p-5">
+      <div class="valuecontent ">
+        <h3 id="AvailabilityTarget"></h3>
+        <h3 id="AgeTarget"></h3>
+        <h3 id="LocationTarget"></h3>
+        <h3 id="YearsTarget"></h3>
+        <h3 id="EmailTarget"></h3>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="container">
+    <form id="myForm" class="hide-content">
+      <div class="mb-3">
+        <label for="formName" class="form-label">Nama</label>
+        <input type="text" class="form-control" id="formName">
+      </div>
+      <div class="mb-3">
+        <label for="formRole" class="form-label">Role</label>
+        <input type="text" class="form-control" id="formRole">
+      </div>
+      <div class="mb-3">
+        <label for="formAvailability" class="form-label">Availability</label>
+        <input type="text" class="form-control" id="formAvailability">
+      </div>
+      <div class="mb-3">
+        <label for="formAge" class="form-label">Usia</label>
+        <input type="number" class="form-control" id="formAge">
+      </div>
+      <div class="mb-3">
+        <label for="formLocation" class="form-label">Lokasi</label>
+        <input type="text" class="form-control" id="formLocation">
+      </div>
+      <div class="mb-3">
+        <label for="formYears" class="form-label">Years Experience</label>
+        <input type="number" class="form-control" id="formYears">
+      </div>
+      <div class="mb-3">
+        <label for="formEmail" class="form-label">Email</label>
+        <input type="email" class="form-control" id="formEmail">
+      </div>
+      <button id="submitButton" class="btn">simpan</button>
+    </form>
+  </div>
+
+  
+  <script src="index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <!-- Compiled and minified JavaScript
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+</body>
+</html>
